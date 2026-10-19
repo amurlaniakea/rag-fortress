@@ -3,7 +3,7 @@ name = "rag-fortress"
 version = "1.0.0-alpha"
 description = "Framework profesional de defensa RAG (poisoning, MIA, anomaly detection con embeddings reales e IsolationForest)."
 authors = [{name = "Pedro Sordo Martinez", email = "amurlaniakea@gmail.com"}]
-license = {text = "AGPL-3.0-or-later"}
+license = "AGPL-3.0-or-later"
 requires-python = ">=3.12"
 dependencies = [
     "pydantic",

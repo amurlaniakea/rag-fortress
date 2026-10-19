@@ -1,3 +1,6 @@
+SPDX-FileCopyrightText: 2026 Pedro Sordo Martínez <amurlaniakea@gmail.com>
+SPDX-License-Identifier: AGPL-3.0-or-later
+
 import asyncio
 from rag_fortress.sanitizer.ingestion import IngestionSanitizer
 from rag_fortress.sanitizer.models import DocumentStatus, ThreatType
