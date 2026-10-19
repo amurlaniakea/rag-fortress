@@ -132,3 +132,12 @@ pip install -e ".[dev]"
 
 > **"La innovación no viene de tener ideas originales. Viene de encontrar problemas reales que otros han investigado pero nadie ha resuelto, y construir la solución."**
 > *— Método de Encuentra Nicho, Obsidian Vault (`llm-wiki/METODOS/Metodo_Encuentra_Nicho.md`)*
+
+---
+
+## Autor
+
+**Pedro Sordo Martínez** — `amurlaniakea@gmail.com`
+
+`SPDX-FileCopyrightText: 2026 Pedro Sordo Martínez <amurlaniakea@gmail.com>`
+`SPDX-License-Identifier: AGPL-3.0-or-later`
