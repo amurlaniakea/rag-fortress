@@ -2,9 +2,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 import logging
-from rag_fortress.sanitizer.models import SanitizerResult, DocumentStatus, ThreatType
-from rag_fortress.sanitizer.entropy_analyzer import calculate_semantic_entropy
+
 from rag_fortress.sanitizer.dormant_detector import check_dormant_patterns
+from rag_fortress.sanitizer.entropy_analyzer import calculate_semantic_entropy
+from rag_fortress.sanitizer.models import DocumentStatus, SanitizerResult, ThreatType
 
 logger = logging.getLogger(__name__)
 
