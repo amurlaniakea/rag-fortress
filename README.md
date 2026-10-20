@@ -1,4 +1,4 @@
-# rag-fortress
+# 🏰 rag-fortress
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![License: AGPL-3.0-or-later](https://img.shields.io/badge/License-AGPL--3.0--or--later-green.svg)](https://www.gnu.org/licenses/agpl-3.0)
@@ -126,18 +126,10 @@ pip install -e ".[dev]"
 
 ## Licencia
 
-**AGPL-3.0-or-later** — Ver archivo `LICENSE` (`661` líneas, texto oficial `GNU`).
+**AGPL-3.0-or-later** — Ver archivo `LICENSE`.
 
----
-
-> **"La innovación no viene de tener ideas originales. Viene de encontrar problemas reales que otros han investigado pero nadie ha resuelto, y construir la solución."**
-> *— Método de Encuentra Nicho, Obsidian Vault (`llm-wiki/METODOS/Metodo_Encuentra_Nicho.md`)*
-
----
 
 ## Autor
-
 **Pedro Sordo Martínez** — `amurlaniakea@gmail.com`
 
-`SPDX-FileCopyrightText: 2026 Pedro Sordo Martínez <amurlaniakea@gmail.com>`
-`SPDX-License-Identifier: AGPL-3.0-or-later`
+
