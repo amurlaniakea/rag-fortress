@@ -15,14 +15,15 @@ class VectorAnomalyDetector:
 
     def fit(self, base_embeddings: np.ndarray):
         """Entrena con embeddings legítimos de referencia."""
-        self.base_vectors = base_embeddings
-        self.model.fit(base_embeddings)
+        self.base_vectors = np.array(base_embeddings, copy=True)
+        self.model.fit(self.base_vectors)
 
     def detect(self, new_embedding: np.ndarray) -> bool:
         """Devuelve True si el vector es un outlier (poisoning). Usa IsolationForest + heuristica determinista."""
         if self.base_vectors is None:
             raise ValueError("Detector no entrenado. Llama a fit() primero.")
-        score = self.model.decision_function([new_embedding])[0]
+        # Validación determinista: asegurar que new_embedding es 1-D antes de envolver
+        score = self.model.decision_function([np.atleast_1d(new_embedding)])[0]
         centroid = np.mean(self.base_vectors, axis=0)
         centroid_norm = np.linalg.norm(centroid) or 1e-8
         new_norm = np.linalg.norm(new_embedding) or 1e-8
