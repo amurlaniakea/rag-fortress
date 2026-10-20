@@ -1,5 +1,5 @@
-SPDX-FileCopyrightText: 2026 Pedro Sordo Martínez <amurlaniakea@gmail.com>
-SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: 2026 Pedro Sordo Martínez <amurlaniakea@gmail.com>
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 def check_relevance(query: str, chunk: str, threshold: float = 0.3) -> bool:
     """Heurística determinista: Jaccard similarity de conjuntos de palabras clave."""

@@ -1,5 +1,5 @@
-SPDX-FileCopyrightText: 2026 Pedro Sordo Martínez <amurlaniakea@gmail.com>
-SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: 2026 Pedro Sordo Martínez <amurlaniakea@gmail.com>
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 import logging
 from rag_fortress.sanitizer.models import SanitizerResult, DocumentStatus, ThreatType
@@ -15,7 +15,7 @@ class IngestionSanitizer:
     def __init__(self, entropy_threshold: float = 5.0):
         self.entropy_threshold = entropy_threshold
 
-    async def sanitize(self, text: str, reference_baseline: float = 0.0) -> SanitizerResult:
+    def sanitize(self, text: str, reference_baseline: float = 0.0) -> SanitizerResult:
         try:
             entropy = calculate_semantic_entropy(text)
             if check_dormant_patterns([text]):

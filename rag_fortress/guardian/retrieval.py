@@ -1,5 +1,5 @@
-SPDX-FileCopyrightText: 2026 Pedro Sordo Martínez <amurlaniakea@gmail.com>
-SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: 2026 Pedro Sordo Martínez <amurlaniakea@gmail.com>
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 from rag_fortress.guardian.models import GuardianResult, IntegrityStatus
 from rag_fortress.guardian.relevance_verifier import check_relevance
